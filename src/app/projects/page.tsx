@@ -162,15 +162,15 @@ export default function ProjectsPage() {
   const getStatusColor = (status: string) => {
     switch (status) {
       case 'Completed':
-        return 'bg-green-500/20 text-green-400 border-green-500/30';
+        return 'bg-green-100 text-green-700 border border-green-200';
       case 'In Progress':
-        return 'bg-yellow-500/20 text-yellow-400 border-yellow-500/30';
+        return 'bg-yellow-100 text-yellow-700 border border-yellow-200';
       case 'Active':
-        return 'bg-blue-500/20 text-blue-400 border-blue-500/30';
+        return 'bg-blue-100 text-blue-700 border border-blue-200';
       case 'Ongoing':
-        return 'bg-purple-500/20 text-purple-400 border-purple-500/30';
+        return 'bg-purple-100 text-purple-700 border border-purple-200';
       default:
-        return 'bg-gray-500/20 text-gray-400 border-gray-500/30';
+        return 'bg-slate-100 text-slate-700 border border-slate-200';
     }
   };
 
@@ -178,88 +178,111 @@ export default function ProjectsPage() {
     <>
       <Navbar />
 
-      {/* Enhanced Hero Section */}
+      {/* Hero Section */}
       <section
         ref={heroRef}
-        className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-gray-900 via-black to-gray-900 min-h-screen relative overflow-hidden"
+        className="pt-32 pb-20 bg-white min-h-[60vh] flex items-center"
       >
-        {/* IEEE Gradient Balls */}
-        <div className="ieee-gradient-ball blue" style={{ top: '15%', left: '10%' }}></div>
-        <div className="ieee-gradient-ball orange" style={{ top: '65%', right: '10%' }}></div>
-        <div className="ieee-gradient-ball light-blue" style={{ bottom: '25%', left: '15%' }}></div>
-
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-[#00629B] to-[#0077CC] rounded-2xl mb-8 shadow-lg">
-              <Rocket className="text-white h-10 w-10" />
+        <div className="ieee-container">
+          <div className="text-center max-w-4xl mx-auto">
+            <div className="relative inline-flex items-center justify-center mb-12">
+              <div className="w-20 h-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-3xl flex items-center justify-center shadow-xl border border-blue-200/30">
+                <Rocket className="text-white h-10 w-10" />
+              </div>
+              <div className="absolute -top-1 -right-1 w-4 h-4 bg-blue-400 rounded-full border-2 border-white animate-pulse"></div>
             </div>
-            <h1 className="text-5xl md:text-6xl font-bold ieee-text-gradient mb-6">
-              IEEE Research Projects
+            
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
+              Research <span className="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">Projects</span>
             </h1>
-            <p className="text-xl text-gray-300 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl text-slate-600 leading-relaxed mb-8">
               Explore innovative research projects and technical initiatives led by IEEE societies 
-              that advance technology for humanity. Join our collaborative research community.
+              that advance technology for humanity and drive innovation forward.
             </p>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-700 mx-auto rounded-full"></div>
           </div>
+        </div>
+      </section>
 
-          {/* Project Stats */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 max-w-4xl mx-auto">
-            <div className="text-center p-6 ieee-glass rounded-2xl border border-[#00629B]/20">
-              <div className="text-3xl font-bold ieee-text-gradient-blue mb-2">6</div>
-              <div className="text-gray-300 text-sm">Active Projects</div>
+      {/* Project Stats */}
+      <section className="py-16 bg-slate-50 border-y border-slate-100">
+        <div className="ieee-container">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
+                <Rocket className="text-white h-8 w-8" />
+              </div>
+              <div className="text-3xl font-bold text-slate-900 mb-2 font-mono">6</div>
+              <div className="text-slate-600 font-medium">Active Projects</div>
             </div>
-            <div className="text-center p-6 ieee-glass rounded-2xl border border-[#FF6B35]/20">
-              <div className="text-3xl font-bold text-[#FF6B35] mb-2">71</div>
-              <div className="text-gray-300 text-sm">Team Members</div>
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
+                <Users className="text-white h-8 w-8" />
+              </div>
+              <div className="text-3xl font-bold text-slate-900 mb-2 font-mono">71</div>
+              <div className="text-slate-600 font-medium">Team Members</div>
             </div>
-            <div className="text-center p-6 ieee-glass rounded-2xl border border-[#0077CC]/20">
-              <div className="text-3xl font-bold text-[#0077CC] mb-2">85%</div>
-              <div className="text-gray-300 text-sm">Avg. Progress</div>
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
+                <Award className="text-white h-8 w-8" />
+              </div>
+              <div className="text-3xl font-bold text-slate-900 mb-2 font-mono">85%</div>
+              <div className="text-slate-600 font-medium">Avg. Progress</div>
             </div>
-            <div className="text-center p-6 ieee-glass rounded-2xl border border-white/20">
-              <div className="text-3xl font-bold text-white mb-2">6</div>
-              <div className="text-gray-300 text-sm">IEEE Societies</div>
+            <div className="text-center group">
+              <div className="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
+                <Globe className="text-white h-8 w-8" />
+              </div>
+              <div className="text-3xl font-bold text-slate-900 mb-2 font-mono">6</div>
+              <div className="text-slate-600 font-medium">IEEE Societies</div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Enhanced Projects Grid */}
-      <section className="py-16 md:py-24 bg-black relative overflow-hidden">
-        <div className="ieee-gradient-ball blue" style={{ top: '10%', right: '10%' }}></div>
-        
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
+      {/* Projects Grid */}
+      <section className="py-20 bg-white">
+        <div className="ieee-container">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 mb-6 tracking-tight">
+              Featured <span className="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">Projects</span>
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+              Discover cutting-edge research initiatives across multiple IEEE societies
+            </p>
+          </div>
+
           <div ref={projectsRef} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => {
               const IconComponent = project.icon;
               return (
-                <Card key={project.id} className="project-card ieee-card-hover bg-gray-900/80 border border-[#00629B]/20 rounded-2xl overflow-hidden transition-all duration-300 backdrop-blur-sm">
-                  <CardContent className="p-6">
+                <Card key={project.id} className="project-card bg-white border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group overflow-hidden rounded-3xl">
+                  <CardContent className="p-8">
                     {/* Project Header */}
                     <div className="flex items-center justify-between mb-6">
-                      <div className="w-14 h-14 bg-gradient-to-br from-[#00629B] to-[#0077CC] rounded-xl flex items-center justify-center shadow-lg">
+                      <div className="w-14 h-14 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-xl group-hover:scale-110 transition-all duration-300">
                         <IconComponent className="h-7 w-7 text-white" />
                       </div>
-                      <span className={`px-4 py-2 rounded-full text-xs font-semibold border ${getStatusColor(project.status)}`}>
+                      <span className={`px-4 py-2 rounded-full text-xs font-semibold ${getStatusColor(project.status)}`}>
                         {project.status}
                       </span>
                     </div>
 
                     {/* Project Title and Description */}
-                    <h3 className="text-xl font-bold ieee-text-gradient-blue mb-3">{project.title}</h3>
-                    <p className="text-gray-300 mb-6 leading-relaxed text-sm">
+                    <h3 className="text-xl font-bold text-slate-900 mb-3 leading-tight">{project.title}</h3>
+                    <p className="text-slate-600 mb-6 leading-relaxed">
                       {project.description}
                     </p>
 
                     {/* Project Progress */}
                     <div className="mb-6">
-                      <div className="flex justify-between text-sm text-gray-400 mb-2">
-                        <span>Progress</span>
-                        <span>{project.progress}%</span>
+                      <div className="flex justify-between text-sm text-slate-600 mb-2">
+                        <span className="font-medium">Progress</span>
+                        <span className="font-mono font-semibold">{project.progress}%</span>
                       </div>
-                      <div className="w-full bg-gray-700 rounded-full h-2">
+                      <div className="w-full bg-slate-200 rounded-full h-2">
                         <div 
-                          className="bg-gradient-to-r from-[#00629B] to-[#FF6B35] h-2 rounded-full transition-all duration-500"
+                          className="bg-gradient-to-r from-blue-600 to-blue-700 h-2 rounded-full transition-all duration-500"
                           style={{ width: `${project.progress}%` }}
                         ></div>
                       </div>
@@ -267,24 +290,24 @@ export default function ProjectsPage() {
 
                     {/* Project Details */}
                     <div className="grid grid-cols-2 gap-4 mb-6">
-                      <div className="text-center p-3 ieee-glass rounded-xl border border-[#00629B]/10">
-                        <div className="text-lg font-bold text-[#00629B]">{project.team}</div>
-                        <div className="text-xs text-gray-400">Team Size</div>
+                      <div className="text-center p-3 bg-slate-50 rounded-xl border border-slate-100">
+                        <div className="text-lg font-bold text-blue-600">{project.team}</div>
+                        <div className="text-xs text-slate-600 font-medium">Team Size</div>
                       </div>
-                      <div className="text-center p-3 ieee-glass rounded-xl border border-[#FF6B35]/10">
-                        <div className="text-lg font-bold text-[#FF6B35]">{project.duration}</div>
-                        <div className="text-xs text-gray-400">Duration</div>
+                      <div className="text-center p-3 bg-slate-50 rounded-xl border border-slate-100">
+                        <div className="text-lg font-bold text-blue-600">{project.duration}</div>
+                        <div className="text-xs text-slate-600 font-medium">Duration</div>
                       </div>
                     </div>
 
                     {/* Technologies */}
                     <div className="mb-6">
-                      <div className="text-sm text-gray-400 mb-3">Technologies</div>
+                      <div className="text-sm text-slate-600 mb-3 font-medium">Technologies</div>
                       <div className="flex flex-wrap gap-2">
                         {project.technologies.map((tech, index) => (
                           <span 
                             key={index}
-                            className="px-3 py-1 bg-[#00629B]/10 text-[#00629B] text-xs rounded-full border border-[#00629B]/20"
+                            className="px-3 py-1 bg-blue-50 text-blue-700 text-xs rounded-full border border-blue-200 font-medium"
                           >
                             {tech}
                           </span>
@@ -294,28 +317,31 @@ export default function ProjectsPage() {
 
                     {/* Category */}
                     <div className="mb-6">
-                      <span className="inline-block bg-gradient-to-r from-[#FF6B35] to-[#FF6B35] text-white px-4 py-2 rounded-full text-xs font-semibold">
+                      <span className="inline-block bg-gradient-to-r from-blue-600 to-blue-700 text-white px-4 py-2 rounded-full text-xs font-semibold">
                         {project.category}
                       </span>
                     </div>
 
                     {/* Creator */}
                     <div className="flex items-center mb-6">
-                      <Avatar className="h-10 w-10 border-2 border-[#00629B]/20">
-                        <AvatarImage src={project.creator.avatar} alt={project.creator.name} />
-                        <AvatarFallback className="bg-[#00629B] text-white text-sm">
-                          {project.creator.name.split(' ').map(n => n[0]).join('')}
-                        </AvatarFallback>
-                      </Avatar>
+                      <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-slate-200">
+                        <Image
+                          src={project.creator.avatar}
+                          alt={project.creator.name}
+                          width={40}
+                          height={40}
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
                       <div className="ml-3">
-                        <div className="text-sm font-medium text-white">{project.creator.name}</div>
-                        <div className="text-xs text-gray-400">Project Lead</div>
+                        <div className="text-sm font-semibold text-slate-900">{project.creator.name}</div>
+                        <div className="text-xs text-slate-600">Project Lead</div>
                       </div>
                     </div>
 
                     {/* View Details Button */}
                     <Link href={`/projects/${project.id}`} className="w-full">
-                      <Button className="w-full ieee-button bg-gradient-to-r from-[#00629B] to-[#FF6B35] hover:from-[#004D7A] hover:to-[#E55A2B] text-white rounded-xl py-3 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
+                      <Button className="w-full bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-2xl py-3 text-sm font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
                         <Rocket className="mr-2 h-4 w-4" />
                         View Details
                       </Button>
@@ -327,16 +353,16 @@ export default function ProjectsPage() {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center mt-16">
-            <div className="ieee-glass rounded-2xl p-8 border border-[#00629B]/20 max-w-2xl mx-auto">
-              <h3 className="text-2xl font-bold ieee-text-gradient-blue mb-4">
+          <div className="text-center mt-20">
+            <div className="bg-slate-50 rounded-3xl p-10 border border-slate-200 max-w-2xl mx-auto">
+              <h3 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-4 tracking-tight">
                 Want to Start Your Own Project?
               </h3>
-              <p className="text-gray-300 mb-6">
+              <p className="text-slate-600 mb-8 leading-relaxed text-lg">
                 Join our research community and collaborate with fellow IEEE members on innovative projects that advance technology for humanity.
               </p>
-              <Button className="ieee-button bg-gradient-to-r from-[#00629B] to-[#0077CC] hover:from-[#004D7A] hover:to-[#00629B] text-white rounded-xl px-8 py-4 text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-2xl transform hover:-translate-y-1">
-                <Users className="mr-2 h-5 w-5" />
+              <Button className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-2xl px-8 py-4 text-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105">
+                <Users className="mr-3 h-5 w-5" />
                 Join Research Team
               </Button>
             </div>
