@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Github, Linkedin, Instagram, Mail, Globe, MapPin, Phone, Users, Award, Zap, Rocket, Shield, Cpu, Database } from "lucide-react";
+import { Github, Linkedin, Instagram, Mail, Globe, MapPin, Phone, Users, Award, Zap, Rocket, Shield, Cpu } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -109,17 +109,21 @@ export default function Footer() {
               </div>
             </div>
           </div>
+                <span className="text-sm">Women in Engineering</span>
+              </div>
+            </div>
+          </div>
 
           {/* Social Media & Connect */}
           <div className="flex flex-col">
-            <h3 className="text-xl font-bold text-slate-900 mb-8 tracking-tight">Connect With Us</h3>
+            <h3 className="text-lg font-bold text-slate-900 mb-6">Connect With IEEE</h3>
             <div className="space-y-6">
-              <div className="flex space-x-4">
+              <div className="flex space-x-3">
                 <a
                   href="https://www.linkedin.com/company/ieee-kiet"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition-all duration-300"
+                  className="w-11 h-11 bg-blue-600 rounded-xl flex items-center justify-center text-white hover:bg-blue-700 transition-all duration-300 shadow-lg shadow-blue-500/25"
                 >
                   <Linkedin size={20} />
                 </a>
@@ -127,7 +131,7 @@ export default function Footer() {
                   href="https://www.instagram.com/ieee_kiet/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-600 rounded-2xl flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition-all duration-300"
+                  className="w-11 h-11 bg-gradient-to-br from-pink-500 to-purple-600 rounded-xl flex items-center justify-center text-white hover:scale-105 transition-all duration-300 shadow-lg shadow-pink-500/25"
                 >
                   <Instagram size={20} />
                 </a>
@@ -135,19 +139,19 @@ export default function Footer() {
                   href="https://ieee.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-12 h-12 bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition-all duration-300"
+                  className="w-11 h-11 bg-slate-800 rounded-xl flex items-center justify-center text-white hover:bg-slate-900 transition-all duration-300 shadow-lg shadow-slate-500/25"
                 >
                   <Globe size={20} />
                 </a>
               </div>
-              <div className="text-sm text-slate-600 space-y-3">
-                <div className="flex items-center space-x-3">
+              <div className="text-sm text-slate-600 space-y-2">
+                <div className="flex items-center space-x-2">
                   <Users className="h-4 w-4 text-blue-600" />
-                  <span className="font-medium">420,000+ IEEE Members Worldwide</span>
+                  <span>420,000+ IEEE Members Worldwide</span>
                 </div>
-                <div className="flex items-center space-x-3">
+                <div className="flex items-center space-x-2">
                   <Award className="h-4 w-4 text-blue-600" />
-                  <span className="font-medium">World's Largest Technical Organization</span>
+                  <span>World's Largest Technical Organization</span>
                 </div>
               </div>
             </div>
@@ -155,29 +159,21 @@ export default function Footer() {
         </div>
         
         {/* Mission Statement */}
-        <div className="bg-white rounded-3xl p-10 border border-slate-200/60 mb-16 shadow-sm relative overflow-hidden">
-          <div className="absolute inset-0 opacity-5">
-            <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full transform translate-x-16 -translate-y-16"></div>
-          </div>
-          <div className="relative z-10 text-center max-w-4xl mx-auto">
-            <h4 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-6 tracking-tight">
-              Advancing Technology for <span className="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">Humanity</span>
-            </h4>
+        <div className="bg-white rounded-2xl p-8 border border-slate-200/60 mb-12 shadow-sm">
+          <div className="text-center max-w-3xl mx-auto">
+            <h4 className="text-xl font-bold text-slate-900 mb-4">Advancing Technology for Humanity</h4>
             <p className="text-slate-600 leading-relaxed text-lg">
-              IEEE is the world's largest technical professional organization dedicated to advancing technology 
-              for the benefit of humanity. Through our global network of members, we inspire, enable, 
-              and empower the world's engineers and technologists to shape the future.
+              IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity. 
+              Through our global network of members, we inspire, enable, and empower the world's engineers and technologists.
             </p>
           </div>
         </div>
         
         {/* Copyright */}
-        <div className="border-t border-slate-200/60 pt-10 text-center">
-          <p className="text-slate-500 text-lg">
-            © 2025 IEEE KIET Student Branch. All rights reserved. 
-            <span className="block sm:inline sm:ml-2 text-blue-600 font-semibold mt-2 sm:mt-0">
-              Advancing Technology for Humanity
-            </span>
+        <div className="border-t border-slate-200/60 pt-8 text-center">
+          <p className="text-sm text-slate-500">
+            © 2025 IEEE KIET Student Branch. All rights reserved. | 
+            <span className="text-blue-600 ml-1 font-medium">Advancing Technology for Humanity</span>
           </p>
         </div>
       </div>

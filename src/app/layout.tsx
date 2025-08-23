@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Geek Room KIET - Building Tomorrow's Tech Leaders",
-  description: "A vibrant tech community at KIET where passion meets innovation. Join us in coding, creating, and building the future of technology.",
+  title: "IEEE KIET Student Branch - Advancing Technology for Humanity",
+  description: "Official website of IEEE KIET Student Branch. Join the world's largest technical professional organization and advance your career in engineering and technology.",
 };
 
 export default function RootLayout({

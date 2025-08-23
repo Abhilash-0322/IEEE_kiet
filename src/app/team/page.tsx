@@ -98,54 +98,66 @@ export default function TeamPage() {
     <>
       <Navbar />
 
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-gray-900 to-black min-h-screen">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="text-center mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
-              IEEE Executive Committee
+      {/* Hero Section */}
+      <section className="pt-32 pb-20 bg-white min-h-[60vh] flex items-center">
+        <div className="ieee-container">
+          <div className="text-center max-w-4xl mx-auto">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
+              Our <span className="bg-gradient-to-r from-blue-600 to-blue-700 bg-clip-text text-transparent">Leadership</span> Team
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-              Meet the dedicated leaders who drive IEEE KIET Student Branch forward, bringing their expertise
-              and passion to advance technology for humanity.
+            <p className="text-xl text-slate-600 leading-relaxed mb-8">
+              Meet the dedicated professionals driving IEEE KIET Student Branch forward, 
+              bringing expertise, innovation, and passion to advance technology for humanity.
             </p>
+            <div className="w-24 h-1 bg-gradient-to-r from-blue-600 to-blue-700 mx-auto rounded-full"></div>
           </div>
+        </div>
+      </section>
 
+      {/* Team Members Section */}
+      <section className="py-20 bg-slate-50">
+        <div className="ieee-container">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {teamMembers.map((member) => (
+            {teamMembers.map((member, index) => (
               <Card
                 key={member.id}
-                className="bg-gray-900/70 backdrop-blur-sm border border-gray-700 p-6 rounded-xl hover:shadow-lg hover:border-[#00629B] transition-all duration-300"
+                className="bg-white border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group overflow-hidden rounded-3xl"
               >
-                <div className="flex flex-col items-center text-center">
-                  {/* Clickable Avatar with Rotating Animation */}
-                  <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="relative mb-4 group"
-                  >
-                    <div className="absolute inset-0 rounded-full border-2 border-[#00629B]/30 group-hover:border-[#00629B]/50 transition-all duration-300 animate-orbit">
-                      <div className="absolute w-3 h-3 bg-[#FF6B35] rounded-full -top-1 left-1/2 transform -translate-x-1/2 animate-spin-orbit"></div>
+                <div className="p-8">
+                  {/* Avatar Section */}
+                  <div className="relative mb-6 flex justify-center">
+                    <div className="relative">
+                      <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-slate-100 group-hover:border-blue-200 transition-colors duration-300 shadow-lg">
+                        <Image
+                          src={member.image}
+                          alt={member.name}
+                          width={96}
+                          height={96}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                        />
+                      </div>
+                      <div className="absolute -bottom-1 -right-1 w-6 h-6 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full border-2 border-white flex items-center justify-center">
+                        <div className="w-2 h-2 bg-white rounded-full"></div>
+                      </div>
                     </div>
-                    <Avatar className="h-24 w-24 border-2 border-[#00629B]/20 group-hover:border-[#00629B]/40 transition-all duration-300">
-                      <AvatarImage src={member.image} alt={member.name} />
-                      <AvatarFallback className="bg-[#00629B] text-white">{member.name.charAt(0)}</AvatarFallback>
-                    </Avatar>
-                  </a>
+                  </div>
 
-                  <h3 className="text-xl font-semibold text-white">{member.name}</h3>
-                  <p className="text-[#FF6B35] text-sm font-medium mb-4">{member.role}</p>
+                  {/* Content */}
+                  <div className="text-center">
+                    <h3 className="text-xl font-bold text-slate-900 mb-2">{member.name}</h3>
+                    <div className="inline-block bg-gradient-to-r from-blue-600 to-blue-700 text-white text-sm font-semibold px-4 py-2 rounded-full mb-4">
+                      {member.role}
+                    </div>
+                    <p className="text-slate-600 leading-relaxed mb-6 text-sm">
+                      {member.bio}
+                    </p>
 
-                  <p className="text-gray-300 text-sm mb-6">
-                    {member.bio}
-                  </p>
-
-                  <div className="flex space-x-4 mt-auto">
+                    {/* LinkedIn Link */}
                     <a
                       href={member.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-400 hover:text-[#00629B] transition-colors"
+                      className="inline-flex items-center justify-center w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl text-white hover:shadow-lg hover:scale-110 transition-all duration-300"
                     >
                       <Linkedin size={20} />
                     </a>
@@ -156,36 +168,6 @@ export default function TeamPage() {
           </div>
         </div>
       </section>
-
-      <style jsx>{`
-        /* Orbiting ring animation */
-        @keyframes orbit {
-          0% {
-            transform: rotate(0deg);
-          }
-          100% {
-            transform: rotate(360deg);
-          }
-        }
-
-        /* Spinning dot animation */
-        @keyframes spin-orbit {
-          0% {
-            transform: translateX(-50%) rotate(0deg) translateY(-1.5rem);
-          }
-          100% {
-            transform: translateX(-50%) rotate(360deg) translateY(-1.5rem);
-          }
-        }
-
-        .animate-orbit {
-          animation: orbit 6s linear infinite;
-        }
-
-        .animate-spin-orbit {
-          animation: spin-orbit 2s linear infinite;
-        }
-      `}</style>
 
       <Footer />
     </>
