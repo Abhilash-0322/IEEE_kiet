@@ -84,7 +84,7 @@ export default function GalleryPage() {
     <>
       <Navbar />
 
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-gray-900 to-black min-h-screen">
+      {/* <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-gradient-to-b from-gray-900 to-black min-h-screen">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
             <h1 className="text-4xl md:text-5xl font-bold text-white mb-4">
@@ -98,7 +98,7 @@ export default function GalleryPage() {
 
           <Gallery images={galleryImages} />
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </>

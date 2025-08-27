@@ -12,7 +12,7 @@ const navLinks = [
   { href: "/events", label: "Events" },
   { href: "/projects", label: "Projects" },
   { href: "/team", label: "Team" },
-  { href: "/blogs", label: "Blogs" },
+  { href: "/articles", label: "Articles" },
 ];
 
 export default function Navbar() {
@@ -45,12 +45,16 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           <div className="flex-shrink-0">
             <Link href="/" className="group">
-              <div className="flex items-center space-x-4 transition-transform duration-300 group-hover:scale-105">
+              <div className="flex items-center space-x-3 transition-transform duration-300 group-hover:scale-105">
                 <div className="relative">
-                  <div className="w-12 h-12 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-2xl flex items-center justify-center shadow-lg border border-blue-200/30">
-                    <Award className="text-white h-6 w-6" />
-                  </div>
-                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-400 rounded-full border-2 border-white animate-pulse"></div>
+                  <Image 
+                    src="/Ieee_blue.png" 
+                    alt="IEEE Logo" 
+                    width={106} 
+                    height={106} 
+                    className="object-contain drop-shadow-sm"
+                  />
+                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-500 rounded-full border-2 border-white animate-pulse shadow-sm"></div>
                 </div>
                 <div className="flex flex-col">
                   <div className="text-slate-900 font-bold text-xl lg:text-2xl tracking-tight">

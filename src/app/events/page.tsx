@@ -29,48 +29,48 @@ const events = [
     category: "Workshop",
     features: ["AI & Machine Learning", "IoT Development", "Robotics Programming", "Networking Session"]
   },
-  {
-    id: "ieee-coding-competition",
-    date: "22 March 2025",
-    time: "9:00 AM - 6:00 PM",
-    location: "KIET Computer Labs",
-    attendees: "150+",
-    upcoming: true,
-    title: "IEEE Coding Competition",
-    description:
-      "Compete with fellow students in our annual coding competition featuring algorithmic challenges and real-world problems. Showcase your programming skills and win exciting prizes.",
-    image: "/2.jpg",
-    category: "Competition",
-    features: ["Algorithm Challenges", "Real-world Problems", "Team Collaboration", "Prize Pool"]
-  },
-  {
-    id: "ieee-innovation-summit",
-    date: "5 April 2025",
-    time: "9:00 AM - 5:00 PM",
-    location: "KIET Convention Center",
-    attendees: "200+",
-    upcoming: true,
-    title: "IEEE Innovation Summit",
-    description:
-      "Showcase your innovative projects and connect with industry experts at our annual innovation summit. Present your ideas and get feedback from leading professionals.",
-    image: "/3.jpg",
-    category: "Summit",
-    features: ["Project Showcase", "Industry Networking", "Expert Feedback", "Innovation Awards"]
-  },
-  {
-    id: "ieee-research-symposium",
-    date: "12 April 2025",
-    time: "10:00 AM - 4:00 PM",
-    location: "KIET Research Center",
-    attendees: "80+",
-    upcoming: true,
-    title: "IEEE Research Symposium",
-    description:
-      "Present your research papers and get feedback from academic experts in various engineering disciplines. Contribute to the advancement of technology through research.",
-    image: "/4.jpg",
-    category: "Research",
-    features: ["Paper Presentations", "Academic Feedback", "Publication Opportunities", "Research Networking"]
-  },
+  // {
+  //   id: "ieee-coding-competition",
+  //   date: "22 March 2025",
+  //   time: "9:00 AM - 6:00 PM",
+  //   location: "KIET Computer Labs",
+  //   attendees: "150+",
+  //   upcoming: true,
+  //   title: "IEEE Coding Competition",
+  //   description:
+  //     "Compete with fellow students in our annual coding competition featuring algorithmic challenges and real-world problems. Showcase your programming skills and win exciting prizes.",
+  //   image: "/2.jpg",
+  //   category: "Competition",
+  //   features: ["Algorithm Challenges", "Real-world Problems", "Team Collaboration", "Prize Pool"]
+  // },
+  // {
+  //   id: "ieee-innovation-summit",
+  //   date: "5 April 2025",
+  //   time: "9:00 AM - 5:00 PM",
+  //   location: "KIET Convention Center",
+  //   attendees: "200+",
+  //   upcoming: true,
+  //   title: "IEEE Innovation Summit",
+  //   description:
+  //     "Showcase your innovative projects and connect with industry experts at our annual innovation summit. Present your ideas and get feedback from leading professionals.",
+  //   image: "/3.jpg",
+  //   category: "Summit",
+  //   features: ["Project Showcase", "Industry Networking", "Expert Feedback", "Innovation Awards"]
+  // },
+  // {
+  //   id: "ieee-research-symposium",
+  //   date: "12 April 2025",
+  //   time: "10:00 AM - 4:00 PM",
+  //   location: "KIET Research Center",
+  //   attendees: "80+",
+  //   upcoming: true,
+  //   title: "IEEE Research Symposium",
+  //   description:
+  //     "Present your research papers and get feedback from academic experts in various engineering disciplines. Contribute to the advancement of technology through research.",
+  //   image: "/4.jpg",
+  //   category: "Research",
+  //   features: ["Paper Presentations", "Academic Feedback", "Publication Opportunities", "Research Networking"]
+  // },
 ];
 
 export default function EventsPage() {

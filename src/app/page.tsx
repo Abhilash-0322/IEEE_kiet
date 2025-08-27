@@ -236,10 +236,14 @@ export default function Home() {
             {/* Logo and Brand */}
             <div className="relative inline-flex items-center justify-center mb-12">
               <div className="relative">
-                <div className="w-20 h-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-3xl flex items-center justify-center shadow-xl border border-blue-200/30 backdrop-blur-sm">
-                  <Award className="text-white h-10 w-10" />
-                </div>
-                <div className="absolute -top-1 -right-1 w-4 h-4 bg-gradient-to-br from-blue-400 to-blue-500 rounded-full border-2 border-white animate-pulse"></div>
+                <Image 
+                  src="/Ieee_blue.png" 
+                  alt="IEEE Logo" 
+                  width={260} 
+                  height={260} 
+                  className="object-contain drop-shadow-lg"
+                />
+                <div className="absolute -top-2 -right-2 w-6 h-6 bg-blue-500 rounded-full border-3 border-white animate-pulse shadow-lg"></div>
               </div>
             </div>
             
@@ -295,7 +299,7 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="ieee-section bg-white border-y border-slate-100">
+      {/* <section className="ieee-section bg-white border-y border-slate-100">
         <div className="ieee-container">
           <div className="text-center mb-20">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
@@ -330,7 +334,7 @@ export default function Home() {
       </section>
 
       {/* Gallery Preview Section */}
-      <section className="ieee-section bg-slate-50">
+      {/* <section className="ieee-section bg-slate-50">
         <div className="ieee-container">
           <div className="text-center mb-20">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 mb-6 tracking-tight">
@@ -367,16 +371,15 @@ export default function Home() {
                     </div>
                     <h3 className="text-white font-bold text-xl lg:text-2xl mb-2">{image.title}</h3>
                     <div className="w-12 h-1 bg-blue-400 rounded-full"></div>
-                  </div>
-                  
+                  </div> */}
                   {/* Hover overlay */}
-                  <div className="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  {/* <div className="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
               </div>
             ))}
-          </div>
+          </div> */}
 
-          <div className="text-center">
+          {/* <div className="text-center">
             <Link href="/gallery">
               <Button className="bg-white text-blue-700 border-2 border-blue-600 hover:bg-blue-600 hover:text-white text-lg px-10 py-4 rounded-2xl transition-all duration-300 shadow-lg hover:shadow-xl font-semibold">
                 <ExternalLink className="mr-3 h-5 w-5" />
@@ -385,7 +388,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* IEEE Societies Section */}
       <section className="ieee-section bg-white">

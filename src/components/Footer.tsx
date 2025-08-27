@@ -10,12 +10,16 @@ export default function Footer() {
           {/* Logo and Address */}
           <div className="flex flex-col lg:col-span-2">
             <Link href="/" className="flex items-center mb-8 group">
-              <div className="flex items-center space-x-4 transition-transform duration-300 group-hover:scale-105">
+              <div className="flex items-center space-x-3 transition-transform duration-300 group-hover:scale-105">
                 <div className="relative">
-                  <div className="w-14 h-14 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-2xl flex items-center justify-center shadow-lg border border-blue-200/30">
-                    <Award className="text-white h-8 w-8" />
-                  </div>
-                  <div className="absolute -top-1 -right-1 w-4 h-4 bg-blue-400 rounded-full border-2 border-white animate-pulse"></div>
+                  <Image 
+                    src="/Ieee_blue.png" 
+                    alt="IEEE Logo" 
+                    width={200} 
+                    height={200} 
+                    className="object-contain drop-shadow-sm"
+                  />
+                  <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-500 rounded-full border-2 border-white animate-pulse shadow-sm"></div>
                 </div>
                 <div className="flex flex-col">
                   <div className="text-slate-900 font-bold text-2xl lg:text-3xl tracking-tight">
