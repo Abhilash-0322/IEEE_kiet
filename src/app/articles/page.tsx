@@ -17,66 +17,6 @@ gsap.registerPlugin(ScrollTrigger);
 // IEEE Technical Articles and Research Papers
 const blogs = [
   {
-    id: 1,
-    title: "Advancements in 5G Network Architecture",
-    excerpt: "Exploring the latest developments in 5G network infrastructure and their implications for future communication systems. Learn about the cutting-edge technologies driving the next generation of wireless communication.",
-    date: "March 15, 2025",
-    readTime: "8 min read",
-    author: "IEEE Communications Society",
-    category: "Communications",
-    icon: Globe,
-    image: "https://ext.same-assets.com/812608780/849522504.jpeg",
-    tags: ["5G", "Network Architecture", "Wireless Communication"]
-  },
-  {
-    id: 2,
-    title: "Machine Learning in Power Systems",
-    excerpt: "How AI and ML are revolutionizing power grid management and energy distribution systems. Discover innovative approaches to smart grid optimization and renewable energy integration.",
-    date: "March 5, 2025",
-    readTime: "12 min read",
-    author: "IEEE Power & Energy Society",
-    category: "Power & Energy",
-    icon: Zap,
-    image: "https://ext.same-assets.com/812608780/849522504.jpeg",
-    tags: ["Machine Learning", "Power Systems", "Smart Grid"]
-  },
-  {
-    id: 3,
-    title: "Robotics and Automation in Industry 4.0",
-    excerpt: "The role of robotics and automation in the fourth industrial revolution and smart manufacturing. Explore how collaborative robots are transforming modern industrial processes.",
-    date: "February 20, 2025",
-    readTime: "10 min read",
-    author: "IEEE Robotics & Automation Society",
-    category: "Robotics",
-    icon: Bug,
-    image: "https://ext.same-assets.com/812608780/849522504.jpeg",
-    tags: ["Robotics", "Automation", "Industry 4.0"]
-  },
-  {
-    id: 4,
-    title: "Blockchain Technology in Supply Chain Management",
-    excerpt: "Implementing blockchain solutions for transparent and secure supply chain operations. Learn about decentralized systems and their impact on global trade and logistics.",
-    date: "February 10, 2025",
-    readTime: "15 min read",
-    author: "IEEE Computer Society",
-    category: "Computer Science",
-    icon: Cpu,
-    image: "https://ext.same-assets.com/812608780/849522504.jpeg",
-    tags: ["Blockchain", "Supply Chain", "Decentralization"]
-  },
-  {
-    id: 5,
-    title: "Women in Engineering: Breaking Barriers",
-    excerpt: "Celebrating the achievements of women engineers and promoting diversity in the engineering field. Discover inspiring stories and initiatives driving gender equality in STEM.",
-    date: "February 5, 2025",
-    readTime: "6 min read",
-    author: "IEEE Women in Engineering",
-    category: "WIE",
-    icon: Shield,
-    image: "https://ext.same-assets.com/812608780/849522504.jpeg",
-    tags: ["Women in Engineering", "Diversity", "STEM"]
-  },
-  {
     id: 6,
     title: "Research Methodologies in Engineering",
     excerpt: "A comprehensive guide to conducting research and publishing papers in IEEE conferences and journals. Master the art of academic writing and research presentation.",
@@ -164,7 +104,7 @@ export default function BlogsPage() {
       </section>
 
       {/* Blog Stats */}
-      <section className="py-16 bg-slate-50 border-y border-slate-100">
+      {/* <section className="py-16 bg-slate-50 border-y border-slate-100">
         <div className="ieee-container">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center group">
@@ -197,7 +137,7 @@ export default function BlogsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Blogs Grid */}
       <section className="py-20 bg-white">

@@ -41,8 +41,8 @@ export default function Navbar() {
         ? "bg-white/95 backdrop-blur-lg border-b border-slate-200/50 shadow-lg shadow-slate-900/5" 
         : "bg-white/100"
     )}>
-      <nav className="ieee-container py-4 lg:py-6">
-        <div className="flex items-center justify-between">
+      <nav className="ieee-container py-2 lg:py-6">
+        <div className="flex place-items-start justify-between">
           <div className="flex-shrink-0">
             <Link href="/" className="group">
               <div className="flex items-center space-x-3 transition-transform duration-300 group-hover:scale-105">

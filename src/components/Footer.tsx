@@ -72,7 +72,7 @@ export default function Footer() {
                 <div className="w-2 h-2 bg-blue-600 rounded-full group-hover:scale-150 transition-transform duration-300"></div>
                 <span className="font-medium">Our Team</span>
               </Link>
-              <Link href="/blogs" className="text-slate-600 hover:text-blue-700 transition-colors duration-200 flex items-center space-x-3 group">
+              <Link href="/articles" className="text-slate-600 hover:text-blue-700 transition-colors duration-200 flex items-center space-x-3 group">
                 <div className="w-2 h-2 bg-blue-600 rounded-full group-hover:scale-150 transition-transform duration-300"></div>
                 <span className="font-medium">Technical Blogs</span>
               </Link>
@@ -89,7 +89,7 @@ export default function Footer() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3 text-slate-600 hover:text-slate-800 transition-colors duration-200 group">
                 <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <Cpu className="h-5 w-5 text-white" />
+                  <Cpu className="h-5 w-5 text-white"/>
                 </div>
                 <span className="text-sm font-medium">Computer Society</span>
               </div>
@@ -136,7 +136,7 @@ export default function Footer() {
                   <Instagram size={20} />
                 </a>
                 <a
-                  href="https://ieee.org"
+                  href="https://www.ieee.org"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-12 h-12 bg-gradient-to-br from-slate-700 to-slate-800 rounded-2xl flex items-center justify-center text-white hover:shadow-lg hover:scale-110 transition-all duration-300"

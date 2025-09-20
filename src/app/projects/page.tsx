@@ -26,7 +26,7 @@ const projects = [
     icon: Zap,
     creator: {
       name: "IEEE Power & Energy Society",
-      avatar: "/raj.png"
+      avatar: "/rehan.png"
     },
     status: "In Progress",
     progress: 75,
@@ -50,70 +50,6 @@ const projects = [
     duration: "8 months",
     technologies: ["AI", "Robotics", "ROS", "Python"]
   },
-  {
-    id: "5g-network-simulation",
-    title: "5G Network Simulation Tool",
-    description: "A comprehensive simulation tool for testing and optimizing 5G network performance and coverage in urban environments.",
-    category: "Communications",
-    icon: Globe,
-    creator: {
-      name: "IEEE Communications Society",
-      avatar: "/sunny.png"
-    },
-    status: "In Progress",
-    progress: 60,
-    team: 10,
-    duration: "10 months",
-    technologies: ["5G", "Network Simulation", "C++", "MATLAB"]
-  },
-  {
-    id: "blockchain-supply-chain",
-    title: "Blockchain Supply Chain Solution",
-    description: "A decentralized supply chain management system using blockchain technology for transparency and traceability.",
-    category: "Computer Society",
-    icon: Cpu,
-    creator: {
-      name: "IEEE Computer Society",
-      avatar: "/arpit.png"
-    },
-    status: "Completed",
-    progress: 100,
-    team: 6,
-    duration: "4 months",
-    technologies: ["Blockchain", "Smart Contracts", "Solidity", "Web3"]
-  },
-  {
-    id: "women-engineering-mentorship",
-    title: "Women in Engineering Mentorship Program",
-    description: "A comprehensive mentorship program connecting female engineering students with industry professionals and role models.",
-    category: "Women in Engineering",
-    icon: Shield,
-    creator: {
-      name: "IEEE WIE",
-      avatar: "/shalu.png"
-    },
-    status: "Active",
-    progress: 85,
-    team: 15,
-    duration: "Ongoing",
-    technologies: ["Mentorship", "Leadership", "Career Development"]
-  },
-  {
-    id: "research-paper-publishing",
-    title: "Research Paper Publication Initiative",
-    description: "Supporting students in publishing their research papers in IEEE conferences and journals with mentorship and guidance.",
-    category: "Research & Development",
-    icon: Rocket,
-    creator: {
-      name: "IEEE R&D Team",
-      avatar: "/yash.png"
-    },
-    status: "Ongoing",
-    progress: 90,
-    team: 20,
-    duration: "Continuous",
-    technologies: ["Research", "Publication", "Academic Writing"]
-  }
 ];
 
 export default function ProjectsPage() {
@@ -205,7 +141,7 @@ export default function ProjectsPage() {
       </section>
 
       {/* Project Stats */}
-      <section className="py-16 bg-slate-50 border-y border-slate-100">
+      {/* <section className="py-16 bg-slate-50 border-y border-slate-100">
         <div className="ieee-container">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
             <div className="text-center group">
@@ -238,7 +174,7 @@ export default function ProjectsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Projects Grid */}
       <section className="py-20 bg-white">
