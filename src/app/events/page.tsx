@@ -204,7 +204,7 @@ export default function EventsPage() {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center mt-16">
+          {/* <div className="text-center mt-16">
             <div className="bg-white rounded-xl p-8 border border-[#E5E7EB] max-w-2xl mx-auto shadow-sm">
               <h3 className="text-2xl font-bold text-[#0066CC] mb-4">
                 Stay Updated with IEEE Events
@@ -217,7 +217,7 @@ export default function EventsPage() {
                 Subscribe to Updates
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

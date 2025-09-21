@@ -235,7 +235,7 @@ export default function BlogsPage() {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center mt-20">
+          {/* <div className="text-center mt-20">
             <div className="bg-slate-50 rounded-3xl p-10 border border-slate-200 max-w-2xl mx-auto">
               <h3 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-4 tracking-tight">
                 Contribute to IEEE Knowledge Base
@@ -248,7 +248,7 @@ export default function BlogsPage() {
                 Submit Article
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 

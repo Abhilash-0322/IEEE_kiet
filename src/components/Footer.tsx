@@ -188,3 +188,100 @@ export default function Footer() {
     </footer>
   );
 }
+
+// "use client";
+
+// import Link from "next/link";
+
+// export default function IEECopyrightFooter() {
+//   return (
+//     <footer className="w-full border-t border-gray-300 bg-white text-gray-600">
+//       <div className="max-w-7xl mx-auto px-6 py-6">
+//         {/* Utility Links */}
+//         <div className="flex flex-wrap justify-center space-x-4 text-sm font-medium text-gray-700">
+//           <Link
+//             href="http://www.ieee.org/index.html"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             Home
+//           </Link>
+//           <span>|</span>
+//           <Link
+//             href="http://www.ieee.org/sitemap.html"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             Sitemap/More Sites
+//           </Link>
+//           <span>|</span>
+//           <Link
+//             href="http://www.ieee.org/about/contact_center/index.html"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             Contact
+//           </Link>
+//           <span>|</span>
+//           <Link
+//             href="http://www.ieee.org/accessibility_statement.html"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             Accessibility
+//           </Link>
+//           <span>|</span>
+//           <Link
+//             href="http://www.ieee.org/p9-26.html"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             Nondiscrimination Policy
+//           </Link>
+//           <span>|</span>
+//           <Link
+//             href="http://ieee-ethics-reporting.org/"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             IEEE Ethics Reporting
+//           </Link>
+//           <span>|</span>
+//           <Link
+//             href="https://privacy.ieee.org/policies"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             IEEE Privacy Policy
+//           </Link>
+//           <span>|</span>
+//           <Link
+//             href="https://www.ieee.org/about/help/site-terms-conditions.html"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             Terms & Disclosures
+//           </Link>
+//         </div>
+
+//         {/* Copyright */}
+//         <div className="mt-4 text-center text-sm text-gray-500">
+//           <p>
+//             &copy; Copyright 2025 IEEE - All rights reserved. A public charity,
+//             IEEE is the world's largest technical professional organization
+//             dedicated to advancing technology for the benefit of humanity.
+//           </p>
+//         </div>
+//       </div>
+//     </footer>
+//   );
+// }
+

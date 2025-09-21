@@ -143,3 +143,80 @@ export default function Navbar() {
     </header>
   );
 }
+
+
+// "use client";
+
+// import Link from "next/link";
+
+// export default function MetaNavbar() {
+//   return (
+//     <div className="bg-black text-white w-full text-sm">
+//       <div className="ieee-container flex flex-wrap justify-between items-center py-2">
+//         {/* Left Links */}
+//         <p className="flex flex-wrap space-x-4">
+//           <Link
+//             href="https://www.ieee.org/index.html"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             IEEE.org
+//           </Link>
+//           <Link
+//             href="https://www.ieeexplore.ieee.org/Xplore/guesthome.jsp"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             IEEE <em>Xplore</em><sup>®</sup>
+//           </Link>
+//           <Link
+//             href="https://standards.ieee.org/"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             IEEE Standards
+//           </Link>
+//           <Link
+//             href="https://spectrum.ieee.org/"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             IEEE Spectrum
+//           </Link>
+//           <Link
+//             href="https://www.ieee.org/sitemap.html"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             More Sites
+//           </Link>
+//         </p>
+
+//         {/* Right Links */}
+//         <p className="flex flex-wrap space-x-4">
+//           <Link
+//             href="https://www.ieee.org/membership/join/index.html?WT.mc_id=hc_join"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             Join IEEE
+//           </Link>
+//           <Link
+//             href="https://www.ieee.org/give"
+//             target="_blank"
+//             rel="noopener noreferrer"
+//             className="hover:underline"
+//           >
+//             Donate
+//           </Link>
+//         </p>
+//       </div>
+//     </div>
+//   );
+// }
