@@ -80,7 +80,7 @@ export default function Footer() {
           </div>
 
           {/* Tech Focus */}
-          <div className="flex flex-col">
+          {/* <div className="flex flex-col">
             <h3 className="text-xl font-bold text-slate-900 mb-8 tracking-tight">IEEE Societies</h3>
             <div className="space-y-4">
               <div className="flex items-center space-x-3 text-slate-600 hover:text-slate-800 transition-colors duration-200 group">
@@ -108,7 +108,7 @@ export default function Footer() {
                 <span className="text-sm font-medium">Communications Society</span>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Social Media & Connect */}
           <div className="flex flex-col">
