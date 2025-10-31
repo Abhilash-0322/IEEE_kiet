@@ -158,7 +158,7 @@ export default function Footer() {
           </div>
         </div>
         
-        {/* Mission Statement */}
+        {/* Mission Statement
         <div className="bg-white rounded-3xl p-10 border border-slate-200/60 mb-16 shadow-sm relative overflow-hidden">
           <div className="absolute inset-0 opacity-5">
             <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-blue-600 to-blue-700 rounded-full transform translate-x-16 -translate-y-16"></div>
@@ -173,7 +173,7 @@ export default function Footer() {
               and empower the world's engineers and technologists to shape the future.
             </p>
           </div>
-        </div>
+        </div> */}
         
         {/* Copyright */}
         <div className="border-t border-slate-200/60 pt-10 text-center">
