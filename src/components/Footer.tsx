@@ -83,7 +83,7 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Tech Focus */}
+          {/* Tech Focus
           <div className="flex flex-col">
             <h3 className="text-xl font-bold text-slate-900 mb-8 tracking-tight">IEEE Societies</h3>
             <div className="space-y-4">
@@ -112,7 +112,7 @@ export default function Footer() {
                 <span className="text-sm font-medium">Communications Society</span>
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Social Media & Connect */}
           <div className="flex flex-col">
