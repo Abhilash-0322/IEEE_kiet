@@ -85,10 +85,11 @@ export default function BlogsPage() {
         <div className="ieee-container">
           <div className="text-center max-w-4xl mx-auto">
             <div className="relative inline-flex items-center justify-center mb-12">
-              <div className="w-20 h-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-3xl flex items-center justify-center shadow-xl border border-blue-200/30">
+              {/* <div className="w-20 h-20 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 rounded-3xl flex items-center justify-center shadow-xl border border-blue-200/30">
                 <BookOpen className="text-white h-10 w-10" />
               </div>
-              <div className="absolute -top-1 -right-1 w-4 h-4 bg-blue-400 rounded-full border-2 border-white animate-pulse"></div>
+              <div className="absolute -top-1 -right-1 w-4 h-4 bg-blue-400 rounded-full border-2
+               border-white animate-pulse"></div> */}
             </div>
             
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
