@@ -84,9 +84,9 @@ export default function EventsPage() {
       >
         <div className="ieee-container">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center justify-center w-20 h-20 bg-[#0066CC] rounded-2xl mb-8 shadow-lg">
+            {/* <div className="inline-flex items-center justify-center w-20 h-20 bg-[#0066CC] rounded-2xl mb-8 shadow-lg">
               <Calendar className="text-white h-10 w-10" />
-            </div>
+            </div> */}
             <h1 className="text-4xl md:text-5xl font-bold text-[#0066CC] mb-6">
               IEEE Events
             </h1>
